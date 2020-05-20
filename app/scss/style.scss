@@ -1,13 +1,67 @@
-html {
-	box-sizing: border-box;
-}
+@import "vars";
+@import "global";
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
+.header {
+	&__top {
+		height: 100px;
+		background-color: #eef1f3;
+	}
 
-.box {
-	display: flex;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+	}
+
+	&__btn {
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 18px;
+		background-color: #0674ec;
+		padding: 13px 18px 12px;
+		margin-right: 50px;
+		margin-left: auto;
+	}
+
+	&__list {
+	}
+
+	&__list-item {
+	}
+
+	&__notice {
+	}
+
+	&__notice-icon {
+	}
+
+	&__counter-badge {
+	}
+
+	&__messages {
+	}
+
+	&__messages-icon {
+	}
+
+	&__basket {
+	}
+
+	&__basket-icon {
+	}
+
+	&__account {
+	}
+
+	&__avatar {
+	}
+
+	&__nickname {
+	}
+
+	&__total-sum {
+	}
+}
+.container {
 }
