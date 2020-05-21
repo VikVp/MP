@@ -1,27 +1,29 @@
 @import "vars";
 @import "global";
+@import "fonts";
 
 .header {
 	&__top {
-		height: 100px;
 		background-color: #eef1f3;
+		padding: 25px 0;
 	}
 
 	&__inner {
-		display: flex;
-		justify-content: space-between;
 	}
 
 	&__logo {
+		margin-left: 4px;
 	}
 
 	&__btn {
+		font-size: 14px;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		border-radius: 18px;
 		background-color: #0674ec;
-		padding: 13px 18px 12px;
+		padding: 9px 18px 11px;
 		margin-right: 50px;
 		margin-left: auto;
+		color: #fff;
 	}
 
 	&__list {
@@ -31,37 +33,127 @@
 	}
 
 	&__notice {
+		margin-right: 31px;
 	}
 
 	&__notice-icon {
+		background-image: url(../images/icon/notice.png);
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 20px;
+		display: block;
 	}
 
 	&__counter-badge {
+		color: #fff;
 	}
 
 	&__messages {
+		margin-right: 33px;
 	}
 
 	&__messages-icon {
+		background-image: url(../images/icon/messages.png);
+		background-repeat: no-repeat;
+		width: 21px;
+		height: 14px;
+		display: block;
 	}
 
 	&__basket {
+		margin-right: 48px;
 	}
 
 	&__basket-icon {
+		background-image: url(../images/icon/basket.png);
+		background-repeat: no-repeat;
+		width: 18px;
+		height: 20px;
+		display: block;
 	}
 
 	&__account {
 	}
-
+	&__account-text {
+		margin-left: 22px;
+		font-weight: 500;
+		font-size: 16px;
+	}
 	&__avatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background-color: #7c7979;
+		background-repeat: no-repeat;
+		background-size: cover;
+		line-height: 0;
 	}
 
 	&__nickname {
 	}
 
 	&__total-sum {
+		font-size: 15px;
+		color: $blue;
 	}
 }
+.header {
+	&__middle {
+		min-height: 79px;
+		padding: 17px 0;
+	}
+
+	&__menu {
+	}
+
+	&__menu-list {
+		li {
+			display: inline-block;
+			& + li {
+				margin-left: 31px;
+			}
+		}
+		a {
+			color: #333;
+			font-size: 15px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+
+	&__search {
+	}
+	&__search-form {
+		width: 360px;
+		position: relative;
+	}
+	&__search-input {
+		display: block;
+		width: 100%;
+		height: 46px;
+		border-radius: 23px;
+		border: 1px solid #d9dfe5;
+		padding: 16px 85px 16px 25px;
+		outline: transparent;
+		&::placeholder {
+			color: #898f96;
+			font-size: 15px;
+		}
+	}
+	&__search-btn {
+		width: 70px;
+		height: 46px;
+		border-radius: 23px;
+		background-color: #0674ec;
+		background-image: url(../images/icon/search.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		border: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
 .container {
 }
