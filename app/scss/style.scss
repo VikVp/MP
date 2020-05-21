@@ -15,7 +15,7 @@
 		margin-left: 4px;
 	}
 
-	&__btn {
+	&__btn--top {
 		font-size: 14px;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		border-radius: 18px;
@@ -90,9 +90,11 @@
 	}
 
 	&__nickname {
+		display: block;
 	}
 
 	&__total-sum {
+		display: block;
 		font-size: 15px;
 		color: $blue;
 	}
@@ -153,7 +155,133 @@
 		right: 0;
 		top: 0;
 	}
-}
+	&__bottom {
+		padding: 185px 0 256px;
+		background-color: #441c7c;
+		background-image: linear-gradient(to left, rgba(0, 48, 222, 0.8) 0%, rgba(46, 90, 251, 0.8) 100%);
+		text-align: center;
+		position: relative;
+	}
 
-.container {
+	&__title {
+		// text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		max-width: 803px;
+		margin: 0 auto 38px;
+		color: #f3f3f8;
+		font-size: 60px;
+		line-height: 70px;
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__subtitle {
+		color: #f3f3f8;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 72px;
+		margin-bottom: 68px;
+	}
+
+	&__btn {
+	}
+
+	&__btn--all {
+		color: #0674ec;
+		background-color: #fff;
+		margin-right: 30px;
+	}
+
+	&__btn--popular {
+		color: #fff;
+		border: 1px solid #fff;
+	}
+}
+.global-search {
+	width: 1140px;
+	background-color: #fff;
+	padding: 40px;
+	min-height: 135px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	border-radius: 6px;
+	position: absolute;
+	bottom: 0;
+	transform: translateY(50%);
+	&::before {
+		content: "";
+		position: absolute;
+		width: 1110px;
+		height: 135px;
+		border-radius: 6px;
+		background-color: #fff;
+		opacity: 0.5;
+		left: 50%;
+		top: -13px;
+		transform: translateX(-50%);
+		z-index: -1;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		width: 1080px;
+		height: 135px;
+		border-radius: 6px;
+		background-color: #ffffff;
+		opacity: 0.5;
+		left: 50%;
+		top: -26px;
+		transform: translateX(-50%);
+		z-index: -2;
+	}
+
+	&__form {
+		width: 807px;
+		position: relative;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		height: 55px;
+		padding: 20px 224px 20px 29px;
+		border-radius: 4px;
+		border: 1px solid #dcdcdc;
+		outline: transparent;
+		&::placeholder {
+			color: #676767;
+			font-size: 15px;
+		}
+	}
+
+	&__drop-down-list {
+		width: 195px;
+		height: 55px;
+		color: #555555;
+		position: absolute;
+		padding-left: 20px;
+		top: 0;
+		right: 0;
+		border-radius: 0 4px 4px 0;
+		border: 1px solid #dcdcdc;
+		outline: transparent;
+		appearance: none;
+		background-image: url(../images/arrow-down.png);
+		background-repeat: no-repeat;
+		background-position: bottom 22px right 21px;
+	}
+
+	// или лучше через ::artef стрелочку сделать?
+
+	&__btn {
+		min-width: 223px;
+		padding: 18px;
+		height: 55px;
+		color: #fff;
+		border-radius: 4px;
+		background-color: #0674ec;
+		border: none;
+		position: absolute;
+		top: 0;
+		left: 837px;
+	}
 }

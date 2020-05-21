@@ -35,4 +35,11 @@ body {
 .container {
   max-width: 1170px;
   padding: 0 15px;
+  margin: 0 auto;
+}
+.btn-b {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 28px;
+  padding: 17px 32px;
+  height: 55px;
 }
