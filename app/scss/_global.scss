@@ -37,20 +37,35 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.btn-b {
+
+.btn {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 28px;
   padding: 17px 32px;
   height: 55px;
-  color: #0674ec;
-  background-color: #fff;
   transition: all 0.5s;
   border: 1px solid transparent;
+  cursor: pointer;
 }
-.btn-b {
+.btn--white {
+  color: $blue;
+  background-color: #fff;
+}
+.btn--white {
   &:hover {
     color: #fff;
     background-color: transparent;
     border: 1px solid #fff;
+  }
+}
+.btn--blue {
+  background-color: $blue;
+  color: #fff;
+}
+.btn--blue {
+  &:hover {
+    color: $blue;
+    background-color: transparent;
+    border: 1px solid $blue;
   }
 }
