@@ -12,7 +12,6 @@
 
 <body>
 	<header class="header">
-
 		<div class="header__top">
 			<div class="container">
 				<div class="header__inner inner">
@@ -46,7 +45,7 @@
 					</ul>
 					<div class="header__account inner">
 						<a href="#">
-							<img class="header__avatar" src="images/avatar.jpg" alt="avatar">
+							<img class="header__avatar" src="images/content/avatar.jpg" alt="avatar">
 						</a>
 						<div class="header__account-text">
 							<a class="header__nickname" href="#">
@@ -65,6 +64,7 @@
 				<div class="header__inner inner">
 					<nav class="header__menu">
 						<ul class="header__menu-list">
+							<!-- а нельзя просто ссылками без li? -->
 							<li>
 								<a href="#">
 									HOME
@@ -114,12 +114,11 @@
 					<a href="#" class="header__btn--all btn-b">
 						View All Products
 					</a>
-					<a href="#" class="header__btn--popular btn-b">
+					<a href="#" class="header__btn btn-b">
 						Popular Products
 					</a>
 				</div>
 				<div class="global-search">
-
 					<form action="#" class="global-search__form">
 						<input class="global-search__input" type="text" placeholder="Search your products..." required>
 						<select name="Categories" class="global-search__drop-down-list">
@@ -132,15 +131,57 @@
 						</select>
 						<button class="global-search__btn" type="submit">Search Now</button>
 					</form>
-
 				</div>
 			</div>
 		</div>
 		</div>
-
 	</header>
 	<main>
-
+		<section class="features">
+			<div class="container">
+				<div class="features__inner inner">
+					<div class="features__item item">
+						<div class="features__image">
+							<img src="images/icon/features-icon-1.jpg" alt="">
+						</div>
+						<div class="features__title title-item">
+							Best UX Research
+						</div>
+						<div class="features__desc desc">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
+					</div>
+					<div class="features__item features__item--shadow item">
+						<div class="features__image">
+							<img src="images/icon/features-icon-2.jpg" alt="">
+						</div>
+						<div class="features__title title-item">
+							Fully Responsive
+						</div>
+						<div class="features__desc desc">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
+					</div>
+					<div class="features__item item">
+						<div class="features__image">
+							<img src="images/icon/features-icon-3.jpg" alt="">
+						</div>
+						<div class="features__title title-item">
+							Buy & Sell Easily
+						</div>
+						<div class="features__desc desc">
+							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+							the mattis, leo quam aliquet diam
+							congue is laoreet elit metus.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 
