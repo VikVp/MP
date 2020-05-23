@@ -69,3 +69,14 @@ body {
     border: 1px solid $blue;
   }
 }
+
+.product-title {
+  height: 110px;
+  padding: 38px 30px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
