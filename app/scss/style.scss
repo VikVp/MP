@@ -694,7 +694,48 @@
 		align-items: stretch;
 	}
 }
-.container {
+
+// feed end
+
+.facts {
+	min-height: 350px;
+	background-color: #212225;
+	padding: 190px 0 100px 0;
+
+	&__inner {
+	}
+
+	&__item {
+		text-align: center;
+		position: relative;
+	}
+
+	&__icon {
+		width: 48px;
+		position: absolute;
+		top: -90px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__number {
+		color: #feb71d;
+		font-size: 36px;
+		margin-bottom: 10px;
+		&--blue {
+			color: #58c9e9;
+		}
+		&--green {
+			color: #77de51;
+		}
+		&--red {
+			color: #ff6a6d;
+		}
+	}
+
+	&__fact {
+		color: #ffffff;
+		font-size: 18px;
+	}
 }
-.product-title {
-}
+// facts end
