@@ -15,34 +15,32 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="header__inner inner">
-					<div class="header__logo">
-						<a href="#">
-							<img src="images/Logo.png" alt="">
-						</a>
-					</div>
+					<a class="header__logo" href="#">
+						<img src="images/Logo.png" alt="Logo">
+					</a>
 					<a class="header__btn-top" href="#">
 						Become a Seller
 					</a>
-					<ul class="header__list inner">
-						<li class="header__list-item">
+					<div class="header__info inner">
+						<div class="header__item">
 							<a class="header__notice" href="#">
 								<span class="header__notice-icon"></span>
 								<span class="header__counter-badge">25</span>
 							</a>
-						</li>
-						<li class="header__list-item">
+						</div>
+						<div class="header__item">
 							<a class="header__messages" href="#">
 								<span class="header__messages-icon"></span>
 								<span class="header__counter-badge">6</span>
 							</a>
-						</li>
-						<li class="header__list-item">
+						</div>
+						<div class="header__item">
 							<a class="header__basket" href="#">
 								<span class="header__basket-icon"></span>
 								<span class="header__counter-badge">2</span>
 							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 					<div class="header__account inner">
 						<a href="#">
 							<img class="header__avatar" src="images/content/avatar.jpg" alt="avatar">
@@ -64,7 +62,6 @@
 				<div class="header__inner inner">
 					<nav class="header__menu">
 						<ul class="header__menu-list">
-							<!-- а нельзя просто ссылками без li? -->
 							<li class="header__menu-item">
 								<a class="header__menu-link" href="#">
 									HOME
@@ -101,27 +98,34 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bottom">
+		<div class="header__offer">
 			<div class="container">
 				<div class="header__title">
-					Create Your Own
-					<span>Digital Product Marketplace</span>
+					<div> Create Your Own</div>
+					Digital Product Marketplace
 				</div>
 				<div class="header__subtitle">
 					MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
 				</div>
 				<div class="header__btn">
-					<a href="#" class="header__btn--all btn--white btn">
+					<a href="#" class="header__btn btn--white btn">
 						View All Products
 					</a>
 					<a href="#" class="header__btn btn--white btn">
 						Popular Products
 					</a>
 				</div>
-				<div class="global-search">
-					<form action="#" class="global-search__form">
-						<input class="global-search__input" type="text" placeholder="Search your products..." required>
-						<select name="Categories" class="global-search__drop-down-list">
+
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="search">
+			<div class="container">
+				<div class="search__inner">
+					<form action="#" class="search__form">
+						<input class="search__input" type="text" placeholder="Search your products..." required>
+						<select name="Categories" class="search__drop-down-list">
 							<option selected disabled>All Categories</option>
 							<option value="Category-1">Category-1</option>
 							<option value="Category-2">Category-2</option>
@@ -129,14 +133,13 @@
 							<option value="Category-4">Category-4</option>
 							<option value="Category-5">Category-5</option>
 						</select>
-						<button class="global-search__btn" type="submit">Search Now</button>
+						<button class="search__btn" type="submit">Search Now</button>
 					</form>
 				</div>
 			</div>
-		</div>
-		</div>
-	</header>
-	<main>
+		</section>
+		<!-- search end -->
+
 		<section class="features">
 			<div class="container">
 				<div class="features__inner inner">
@@ -182,209 +185,206 @@
 				</div>
 			</div>
 		</section>
+		<!-- features end -->
 
-		<section class="slider products">
+		<section class="weekly">
 			<div class="container">
-				<div class="slider__title product-title">
+				<div class="weekly__title product-title">
 					Weekly Featured Products
 				</div>
-				<div class="slider__inner">
-					<div class="slider__box">
-						<div class="slider__item products__item inner ">
-							<div class="products__inner-img">
-								<a class="slider__item-img products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
-								<div class="slider__item-btm  products__item-btm">
-									<a class="products__btn-img" href="#">More Info</a>
-									<a class="products__btn-img" href="#">Live Demo</a>
-								</div>
+				<div class="weekly__inner">
+					<div class="weekly__box">
+						<div class="weekly__item inner ">
+							<div class="weekly__inner-img">
+								<a class="weekly__img" href="#" style="background-image: url(images/content/product-bg.jpg);"></a>
+								<!-- <div class="weekly__item-btm">
+									<a class="weekly__btn-img" href="#">More Info</a>
+									<a class="weekly__btn-img" href="#">Live Demo</a>
+								</div> -->
 							</div>
-							<div class="slider__item-inner">
-								<div class="slider__item-text products__item-text">
-									<a class="products__item-title" href="#">
+							<div class="weekly__item-inner">
+								<div class="weekly__text">
+									<a class="weekly__item-title" href="#">
 										One Page Resume Template
 									</a>
-									<div class="products__item-box inner">
-										<a class="products__item-author" href="#">
-											<div class="products__item-avatar"
-												style="background-image: url(images/content/products-avatar.jpg);">
+									<div class="weekly__box inner">
+										<a class="weekly__author" href="#">
+											<div class="weekly__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 											</div>
 											<span>AazzTech</span>
 										</a>
-										<a class="products__item-category" href="#">
+										<a class="weekly__category" href="#">
 											WordPress
 										</a>
 									</div>
-									<div class="products__item-desc desc">
+									<div class="weekly__desc desc">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
 										quam
 										aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 								</div>
-								<div class="slider__item-tags inner">
-									<a href="#" class="slider__item-tag">website</a>
-									<a href="#" class="slider__item-tag">plugin</a>
-									<a href="#" class="slider__item-tag">landing page</a>
+								<div class="weekly__tags inner">
+									<a href="#" class="weekly__tag">website</a>
+									<a href="#" class="weekly__tag">plugin</a>
+									<a href="#" class="weekly__tag">landing page</a>
 								</div>
-								<div class="slider__item-info products__item-info inner">
-									<div class="slider__item-price products__item-price">$10 - $50</div>
-									<div class="slider__item-like products__item-like">46</div>
-									<div class="slider__item-buy products__item-buy">634</div>
-									<div class="slider__item-rating products__item-rating"></div>
+								<div class="weekly__info  inner">
+									<div class="weekly__price">$10 - $50</div>
+									<div class="weekly__like">46</div>
+									<div class="weekly__buy">634</div>
+									<div class="weekly__rating rate-star"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="slider__box">
-						<div class="slider__item products__item inner ">
-							<div class="products__inner-img">
-								<a class="slider__item-img products__item-img" href="#"
-									style="background-image: url(images/content/product-bg-2.jpg);"></a>
-								<div class="slider__item-btm  products__item-btm">
-									<a class="products__btn-img" href="#">More Info</a>
-									<a class="products__btn-img" href="#">Live Demo</a>
-								</div>
+					<div class="weekly__box">
+						<div class="weekly__item inner ">
+							<div class="weekly__inner-img">
+								<a class="weekly__img" href="#" style="background-image: url(images/content/product-bg-2.jpg);"></a>
+								<!-- <div class="weekly__item-btm">
+										<a class="weekly__btn-img" href="#">More Info</a>
+										<a class="weekly__btn-img" href="#">Live Demo</a>
+									</div> -->
 							</div>
-							<div class="slider__item-inner">
-								<div class="slider__item-text products__item-text">
-									<a class="products__item-title" href="#">
+							<div class="weekly__item-inner">
+								<div class="weekly__text">
+									<a class="weekly__item-title" href="#">
 										One Page Resume Template
 									</a>
-									<div class="products__item-box inner">
-										<a class="products__item-author" href="#">
-											<div class="products__item-avatar"
-												style="background-image: url(images/content/products-avatar.jpg);">
+									<div class="weekly__box inner">
+										<a class="weekly__author" href="#">
+											<div class="weekly__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 											</div>
 											<span>AazzTech</span>
 										</a>
-										<a class="products__item-category" href="#">
+										<a class="weekly__category" href="#">
 											WordPress
 										</a>
 									</div>
-									<div class="products__item-desc desc">
+									<div class="weekly__desc desc">
 										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
 										quam
 										aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 								</div>
-								<div class="slider__item-tags inner">
-									<a href="#" class="slider__item-tag">website</a>
-									<a href="#" class="slider__item-tag">plugin</a>
-									<a href="#" class="slider__item-tag">landing page</a>
+								<div class="weekly__tags inner">
+									<a href="#" class="weekly__tag">website</a>
+									<a href="#" class="weekly__tag">plugin</a>
+									<a href="#" class="weekly__tag">landing page</a>
 								</div>
-								<div class="slider__item-info products__item-info inner">
-									<div class="slider__item-price products__item-price">$10 - $50</div>
-									<div class="slider__item-like products__item-like">46</div>
-									<div class="slider__item-buy products__item-buy">634</div>
-									<div class="slider__item-rating products__item-rating"></div>
+								<div class="weekly__info  inner">
+									<div class="weekly__price">$10 - $50</div>
+									<div class="weekly__like">46</div>
+									<div class="weekly__buy">634</div>
+									<div class="weekly__rating rate-star"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="slider__box">
-						<div class="slider__item products__item inner ">
-							<div class="products__inner-img">
-								<a class="slider__item-img products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
-								<div class="slider__item-btm  products__item-btm">
-									<a class="products__btn-img" href="#">More Info</a>
-									<a class="products__btn-img" href="#">Live Demo</a>
-								</div>
+					<div class="weekly__box">
+						<div class="weekly__item inner ">
+							<div class="weekly__inner-img">
+								<a class="weekly__img" href="#" style="background-image: url(images/content/product-bg.jpg);"></a>
+								<!-- <div class="weekly__item-btm">
+											<a class="weekly__btn-img" href="#">More Info</a>
+											<a class="weekly__btn-img" href="#">Live Demo</a>
+										</div> -->
 							</div>
-							<div class="slider__item-inner">
-								<div class="slider__item-text products__item-text">
-									<a class="products__item-title" href="#">
+							<div class="weekly__item-inner">
+								<div class="weekly__text">
+									<a class="weekly__item-title" href="#">
 										One Page Resume Template
 									</a>
-									<div class="products__item-box inner">
-										<a class="products__item-author" href="#">
-											<div class="products__item-avatar"
-												style="background-image: url(images/content/products-avatar.jpg);">
+									<div class="weekly__box inner">
+										<a class="weekly__author" href="#">
+											<div class="weekly__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 											</div>
 											<span>AazzTech</span>
 										</a>
-										<a class="products__item-category" href="#">
+										<a class="weekly__category" href="#">
 											WordPress
 										</a>
 									</div>
-									<div class="products__item-desc desc">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+									<div class="weekly__desc desc">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+										leo
 										quam
 										aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 								</div>
-								<div class="slider__item-tags inner">
-									<a href="#" class="slider__item-tag">website</a>
-									<a href="#" class="slider__item-tag">plugin</a>
-									<a href="#" class="slider__item-tag">landing page</a>
+								<div class="weekly__tags inner">
+									<a href="#" class="weekly__tag">website</a>
+									<a href="#" class="weekly__tag">plugin</a>
+									<a href="#" class="weekly__tag">landing page</a>
 								</div>
-								<div class="slider__item-info products__item-info inner">
-									<div class="slider__item-price products__item-price">$10 - $50</div>
-									<div class="slider__item-like products__item-like">46</div>
-									<div class="slider__item-buy products__item-buy">634</div>
-									<div class="slider__item-rating products__item-rating"></div>
+								<div class="weekly__info  inner">
+									<div class="weekly__price">$10 - $50</div>
+									<div class="weekly__like">46</div>
+									<div class="weekly__buy">634</div>
+									<div class="weekly__rating rate-star"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="slider__box">
-						<div class="slider__item products__item inner ">
-							<div class="products__inner-img">
-								<a class="slider__item-img products__item-img" href="#"
-									style="background-image: url(images/content/product-bg-2.jpg);"></a>
-								<div class="slider__item-btm  products__item-btm">
-									<a class="products__btn-img" href="#">More Info</a>
-									<a class="products__btn-img" href="#">Live Demo</a>
-								</div>
+					<div class="weekly__box">
+						<div class="weekly__item inner ">
+							<div class="weekly__inner-img">
+								<a class="weekly__img" href="#" style="background-image: url(images/content/product-bg-2.jpg);"></a>
+								<!-- <div class="weekly__item-btm">
+												<a class="weekly__btn-img" href="#">More Info</a>
+												<a class="weekly__btn-img" href="#">Live Demo</a>
+											</div> -->
 							</div>
-							<div class="slider__item-inner">
-								<div class="slider__item-text products__item-text">
-									<a class="products__item-title" href="#">
+							<div class="weekly__item-inner">
+								<div class="weekly__text">
+									<a class="weekly__item-title" href="#">
 										One Page Resume Template
 									</a>
-									<div class="products__item-box inner">
-										<a class="products__item-author" href="#">
-											<div class="products__item-avatar"
-												style="background-image: url(images/content/products-avatar.jpg);">
+									<div class="weekly__box inner">
+										<a class="weekly__author" href="#">
+											<div class="weekly__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 											</div>
 											<span>AazzTech</span>
 										</a>
-										<a class="products__item-category" href="#">
+										<a class="weekly__category" href="#">
 											WordPress
 										</a>
 									</div>
-									<div class="products__item-desc desc">
-										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+									<div class="weekly__desc desc">
+										Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+										leo
 										quam
-										aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+										aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+										the
 										mattis, leo quam aliquet congue justo ut scelerisque.
 									</div>
 								</div>
-								<div class="slider__item-tags inner">
-									<a href="#" class="slider__item-tag">website</a>
-									<a href="#" class="slider__item-tag">plugin</a>
-									<a href="#" class="slider__item-tag">landing page</a>
+								<div class="weekly__tags inner">
+									<a href="#" class="weekly__tag">website</a>
+									<a href="#" class="weekly__tag">plugin</a>
+									<a href="#" class="weekly__tag">landing page</a>
 								</div>
-								<div class="slider__item-info products__item-info inner">
-									<div class="slider__item-price products__item-price">$10 - $50</div>
-									<div class="slider__item-like products__item-like">46</div>
-									<div class="slider__item-buy products__item-buy">634</div>
-									<div class="slider__item-rating products__item-rating"></div>
+								<div class="weekly__info  inner">
+									<div class="weekly__price">$10 - $50</div>
+									<div class="weekly__like">46</div>
+									<div class="weekly__buy">634</div>
+									<div class="weekly__rating rate-star"></div>
 								</div>
 							</div>
 						</div>
 					</div>
+
 
 				</div>
 			</div>
-			</div>
 		</section>
+		<!-- weekly end -->
 
 		<section class="products">
 			<div class="container">
@@ -406,226 +406,231 @@
 						<button class="products__btn-filter" type="button" data-filter=".category-software">Software</button>
 						<button class="products__btn-filter" type="button" data-filter=".category-plugins">Plugins</button>
 					</div>
-					<div class="products__inner-box inner">
+					<div class="products__inner-items inner">
+
 						<div class="products__item mix category-joomla">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 
 						<div class="products__item mix category-plugins category-new">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg-2.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg-2.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+									ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 
 						<div class="products__item mix category-software">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 
 						<div class="products__item mix category-wordpress">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 
 						<div class="products__item mix category-psd-template category-new">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg-2.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg-2.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 
 						<div class="products__item mix category-psd-template">
 							<div class="products__inner-img">
-								<a class="products__item-img" href="#"
-									style="background-image: url(images/content/product-bg.jpg);"></a>
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
 								<div class="products__item-btm">
 									<a class="products__btn-img" href="#">More Info</a>
 									<a class="products__btn-img" href="#">Live Demo</a>
 								</div>
 							</div>
-							<div class="products__item-text">
+							<div class="products__text">
 								<a class="products__item-title" href="#">
 									E-commerce Shopping Cart
 								</a>
-								<div class="products__item-box inner">
-									<a class="products__item-author" href="#">
-										<div class="products__item-avatar"
-											style="background-image: url(images/content/products-avatar.jpg);">
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
 										</div>
 										<span>Theme-Valley</span>
 									</a>
-									<a class="products__item-category" href="#">
+									<a class="products__category" href="#">
 										Plugin
 									</a>
 								</div>
-								<div class="products__item-desc desc">
+								<div class="products__desc desc">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 									the mattis, leo quam aliquet congue.
 								</div>
 							</div>
-							<div class="products__item-info inner">
-								<div class="products__item-price">$20</div>
-								<div class="products__item-like">90</div>
-								<div class="products__item-rating"></div>
-								<div class="products__item-buy">246</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
 							</div>
 						</div>
 					</div>
@@ -634,6 +639,255 @@
 					<button class="btn--blue btn" type="button" data-filter=".category-new">
 						All New Products
 					</button>
+				</div>
+			</div>
+		</section>
+		<!-- products end -->
+
+
+		<section class="feed">
+			<div class="container">
+				<div class="feed__title product-title">
+					Your Followers Feed
+				</div>
+
+
+				<div class="feed__inner">
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg-2.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg-2.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="feed__box">
+						<div class="feed__item">
+							<div class="products__inner-img">
+								<a class="products__img" href="#">
+									<img src="images/content/product-bg-2.jpg" alt="">
+								</a>
+								<div class="products__item-btm">
+									<a class="products__btn-img" href="#">More Info</a>
+									<a class="products__btn-img" href="#">Live Demo</a>
+								</div>
+							</div>
+							<div class="products__text">
+								<a class="products__item-title" href="#">
+									E-commerce Shopping Cart
+								</a>
+								<div class="products__box inner">
+									<a class="products__author" href="#">
+										<div class="products__avatar" style="background-image: url(images/content/products-avatar.jpg);">
+										</div>
+										<span>Theme-Valley</span>
+									</a>
+									<a class="products__category" href="#">
+										Plugin
+									</a>
+								</div>
+								<div class="products__desc desc">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue.
+								</div>
+							</div>
+							<div class="products__info inner">
+								<div class="products__price">$20</div>
+								<div class="products__like">90</div>
+								<div class="products__rating rate-star"></div>
+								<div class="products__buy">246</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 		</section>

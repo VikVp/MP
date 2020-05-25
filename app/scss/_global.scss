@@ -8,15 +8,7 @@ html {
   box-sizing: inherit;
 }
 a {
-  display: inline-block;
   text-decoration: none;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 body {
@@ -46,29 +38,26 @@ body {
   transition: all 0.5s;
   border: 1px solid transparent;
   cursor: pointer;
-}
-.btn--white {
-  color: $blue;
-  background-color: #fff;
-}
-.btn--white {
-  &:hover {
-    color: #fff;
-    background-color: transparent;
-    border: 1px solid #fff;
-  }
-}
-.btn--blue {
-  background-color: $blue;
-  color: #fff;
-}
-.btn--blue {
-  &:hover {
+  &--white {
     color: $blue;
-    background-color: transparent;
-    border: 1px solid $blue;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+  }
+  &--blue {
+    background-color: $blue;
+    color: #fff;
+    &:hover {
+      color: $blue;
+      background-color: transparent;
+      border: 1px solid $blue;
+    }
   }
 }
+// btn end
 
 .product-title {
   height: 110px;
