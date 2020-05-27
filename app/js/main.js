@@ -18,8 +18,7 @@ $(function () {
     dots: false,
     infinite: true,
     speed: 500,
-    // fade: true,
-    // cssEase: 'linear'
+
   });
 
   $('.feed__inner').slick({
@@ -28,8 +27,14 @@ $(function () {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3
-    // fade: true,
-    // cssEase: 'linear'
+  });
+
+  $('.feedback__inner').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2
   });
 });
 
