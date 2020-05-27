@@ -8,3 +8,14 @@ $grey-bg: #f6f7fb;
   flex-direction: column;
   justify-content: space-between;
 }
+
+@mixin item {
+  max-width: 360px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+@mixin title-item {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
