@@ -27,6 +27,7 @@ $(function () {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3
+    // variableWidth: true
   });
 
   $('.feedback__inner').slick({
@@ -35,6 +36,11 @@ $(function () {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2
+  });
+
+
+  $('.products__filter-btn').on('click', function () {
+    $('.products__list').slideToggle();
   });
 });
 
