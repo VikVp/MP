@@ -24,18 +24,30 @@
 			opacity: 0.8;
 		}
 	}
-
+	&__item {
+		position: relative;
+		margin-right: 30px;
+		&:hover .overview {
+			// display: block;
+			visibility: visible;
+			opacity: 1;
+			transform: scaleY(1);
+		}
+	}
 	&__counter-badge {
 		border-radius: 11px;
-		padding: 0 5px 1px;
+		padding: 0 5px;
 		background-color: green;
 		position: absolute;
-		left: 8px;
-		top: -9px;
+		left: 9px;
+		top: -14px;
 		z-index: 1;
 		font-size: 14px;
 		font-weight: 500;
 		color: #fff;
+		line-height: 22px;
+		min-width: 22px;
+		text-align: center;
 	}
 
 	&__notice,
@@ -50,13 +62,17 @@
 		}
 	}
 
-	// notice***************
-	&__notice-box {
+	&__notice-box,
+	&__messages-box,
+	&__basket-box {
+		width: 21px;
+		height: 20px;
 	}
 
 	&__notice {
-		margin-right: 48px;
 		position: relative;
+		margin-right: 30px;
+		display: block;
 		&::before {
 			content: "\e858";
 		}
@@ -65,9 +81,11 @@
 	&__notice-counter {
 		background-color: #ff6a6c;
 	}
-	messages***** &__messages {
-		margin-right: 54px;
+
+	&__messages {
 		position: relative;
+		margin-right: 30px;
+		display: block;
 		&::before {
 			content: "\e818";
 		}
@@ -75,11 +93,12 @@
 
 	&__messages-counter {
 		background-color: #62d03b;
-		left: 10px;
+		left: 11px;
 	}
 
 	&__basket {
-		margin-right: 62px;
+		margin-right: 30px;
+		display: block;
 		position: relative;
 		&::before {
 			content: "\e82e";
@@ -88,9 +107,16 @@
 
 	&__basket-counter {
 		background-color: $blue;
-		left: 11px;
+		left: 13px;
 	}
-
+	&__account {
+		position: relative;
+		&:hover .header__submenu-list {
+			visibility: visible;
+			opacity: 1;
+			transform: scaleY(1);
+		}
+	}
 	&__account-text {
 		margin-left: 22px;
 		font-weight: 500;
@@ -136,10 +162,17 @@
 			position: relative;
 		}
 		&:hover .header__submenu-list {
-			display: block;
+			// display: block;
+			visibility: visible;
+			opacity: 1;
+			transform: scaleY(1);
 		}
+
 		&:hover .header__megamenu {
-			display: flex;
+			// display: flex;
+			visibility: visible;
+			opacity: 1;
+			transform: scaleY(1);
 		}
 	}
 
@@ -167,7 +200,27 @@
 		top: 48px;
 		left: 0;
 		z-index: 5;
-		display: none;
+		// display: none;
+		visibility: hidden;
+		transform: scaleY(0);
+		transform-origin: 0 0;
+		transition: 0.5s ease-in-out;
+		&--account {
+			right: 0;
+			top: 77px;
+			left: auto;
+			&::after {
+				content: "";
+				position: absolute;
+				top: -11px;
+				right: 27px;
+				box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+				border-style: solid;
+				border-width: 0 9px 10px 9px;
+				border-color: transparent transparent $blue transparent;
+			}
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -182,6 +235,13 @@
 		width: 270px;
 		padding: 20px;
 		position: absolute;
+		visibility: hidden;
+		// opacity: 0;
+		// transform: scale(0.8);
+		// transition: 0.4s ease-in-out;
+		// transform: scaleY(0);
+		// transform-origin: 0 0;
+		// transition: 0.5s ease-in-out;
 	}
 
 	&__submenu-line,
@@ -199,13 +259,24 @@
 
 	&__submenu-link {
 		border-radius: 2px;
-
 		padding: 12px 7px;
 		width: 100%;
 		min-height: 44px;
 		&:hover {
 			background-color: $blue;
 			color: #fff;
+		}
+		&--account {
+			font-family: "Quicksand", sans-serif;
+			padding-left: 32px;
+			position: relative;
+			&::before {
+				position: absolute;
+				font-family: "Linearicons-Free";
+				left: 17px;
+				bottom: 18px;
+				transform: translateX(-50%);
+			}
 		}
 	}
 
@@ -217,7 +288,7 @@
 		padding: 35px 30px;
 		align-items: stretch;
 		position: absolute;
-		display: none;
+		// display: none;
 		top: 62px;
 		&::before {
 			top: -29px;
@@ -315,21 +386,40 @@
 	font-size: 15px;
 	border-top: 1px solid $blue;
 	position: relative;
+
 	&--basket {
 		padding: 0;
 		width: 400px;
 		border-radius: 0 0 3px 3px;
+		right: -24px;
 	}
+	// display: none;
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: 0.5s ease-in-out;
+
 	&::before {
 		content: "";
 		position: absolute;
-		top: -10px;
+		background-color: transparent;
+		left: 0;
+		top: -42px;
+		padding: 21px 185px;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: -11px;
 		right: 27px;
 		box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
 		border-style: solid;
 		border-width: 0 9px 10px 9px;
 		border-color: transparent transparent $blue transparent;
 	}
+	position: absolute;
+	top: 61px;
+	right: -24px;
+	z-index: 2;
 
 	&__top {
 		padding: 0 25px 20px;
@@ -950,6 +1040,7 @@
 		font-size: 16px;
 		padding-right: 30px;
 		position: relative;
+		cursor: pointer;
 	}
 	&__filter-btn {
 		position: absolute;
@@ -986,7 +1077,7 @@
 			right: 20px;
 		}
 		position: absolute;
-		top: 58px;
+		top: 90px;
 		right: 11px;
 		z-index: 2;
 		display: none;
