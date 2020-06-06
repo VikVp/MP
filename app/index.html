@@ -15,7 +15,7 @@
 	<div class="wrapper">
 		<div class="content">
 
-			<!-- <header class="header">
+			<header class="header">
 				<div class="header__top">
 					<div class="container">
 						<div class="header__inner inner">
@@ -407,7 +407,12 @@
 					<div class="container">
 						<div class="header__inner inner">
 							<nav class="header__menu">
-								<ul class="header__menu-list">
+								<div class="header__menu-btn">
+									<div class="header__menu-row"></div>
+									<div class="header__menu-row"></div>
+									<div class="header__menu-row"></div>
+								</div>
+								<ul id="accordion" class="header__menu-list">
 									<li class="header__menu-line">
 										<a class="header__menu-link" href="#">
 											HOME
@@ -453,13 +458,11 @@
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Free Templates
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Follow Feed
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
@@ -477,49 +480,41 @@
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Popular Items
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Admin Templates
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Blog / Magazine / News
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Creative
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Corporate Business
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Resume Portfolio
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													eCommerce
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
 												<a class="header__submenu-link" href="#">
 													Entertainment
-
 												</a>
 											</li>
 											<li class="header__submenu-line">
@@ -533,15 +528,11 @@
 										<a class="header__menu-link" href="#">
 											festures
 										</a>
-										
-
 									</li>
 									<li class="header__menu-line">
 										<a class="header__menu-link" href="#">
 											Pages
 										</a>
-
-
 										<div class="header__megamenu inner">
 											<div class="header__megamenu-col">
 												<div class="header__megamenu-title">
@@ -865,7 +856,329 @@
 												</div>
 											</div>
 										</div>
+										<!-- <div class="header__megamenu inner">
+											<div class="header__megamenu-col">
+												<a href="#tab_01" class="header__megamenu-title">
+													MartPlace Pages
+												</a>
+												<div id="tab_01" class="header__megamenu-inner">
+													<ul class="header__megamenu-list">
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Home Page One
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Home Page Two
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Home Page Three
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Products Grid
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Products List
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Category Grid Sidebar
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Category List Sidebar
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Search Product
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Product V-1
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Product V-2
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Product V-3
+															</a>
+														</li>
+													</ul>
 
+													<ul class="header__megamenu-list">
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Items Comments
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Items Reviews
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Items Support
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Single Items FAQs
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Favorites Items
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Author Profile
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Author Items
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Customer Reviews
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Followers
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Following
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Product View Variations
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="header__megamenu-col">
+												<a href="#tab_02" class="header__megamenu-title">
+													Dashboard
+												</a>
+												<ul id="tab_02" class="header__megamenu-list">
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Dashboard
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Account Settings
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Author Purchases
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Items Rating
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Add Credits
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Statements
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Invoice
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Upload Item
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Edit Items
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Withdrawals
+
+														</a>
+													</li>
+													<li class="header__megamenu-line">
+														<a class="header__megamenu-link" href="#">
+															Add Payment Method
+														</a>
+													</li>
+												</ul>
+											</div>
+											<a href="#tab_03" class="header__megamenu-col">
+												<div class="header__megamenu-title">
+													Others Pages
+												</div>
+												<div id="tab_03" class="header__megamenu-inner">
+													<ul class="header__megamenu-list">
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Notifications
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Message Inbox
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Message Compose
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Shopping Cart
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Checkout
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Login
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Register
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Recovery Password
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Support Forum
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Forum Details
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																How It Works
+															</a>
+														</li>
+													</ul>
+
+													<ul class="header__megamenu-list">
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																About Us
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Pricing Plan
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Testimonials
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																FAQs
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																FAQs Details
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Affiliates
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Terms & Conditions
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Blog V-1
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Blog V-2
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Blog Details
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Contact Us
+															</a>
+														</li>
+														<li class="header__megamenu-line">
+															<a class="header__megamenu-link" href="#">
+																Menu & Footer Variation
+															</a>
+														</li>
+													</ul>
+												</div>
+											</a>
+										</div> -->
 
 									</li>
 								</ul>
@@ -879,7 +1192,7 @@
 						</div>
 					</div>
 				</div>
-			</header> -->
+			</header>
 
 			<!-- header -->
 
@@ -905,11 +1218,13 @@
 				</section>
 				<!-- offer end -->
 
-				<!-- <section class="search-home">
+				<section class="search-home">
 					<div class="container">
+						<button class="search-home__btn-tada" type="submit"></button>
 						<div class="search-home__inner">
-							<form action="#" class="search-home__form">
-								<input class="search-home__input" type="text" placeholder="search-home your products..." required>
+
+							<form action="#" class="search-home__form inner">
+								<input class="search-home__input" type="text" placeholder="search-home your products...">
 								<select name="Categories" class="search-home__drop-down-list">
 									<option selected disabled>All Categories</option>
 									<option value="Category-1">Category-1</option>
@@ -922,7 +1237,7 @@
 							</form>
 						</div>
 					</div>
-				</section> -->
+				</section>
 				<!-- search-home end -->
 
 				<section class="features">
@@ -1001,7 +1316,8 @@
 												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
 												leo
 												quam
-												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the
 												mattis, leo quam aliquet congue justo ut scelerisque.
 											</div>
 										</div>
@@ -1049,7 +1365,8 @@
 												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
 												leo
 												quam
-												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the
 												mattis, leo quam aliquet congue justo ut scelerisque.
 											</div>
 										</div>
@@ -1097,7 +1414,8 @@
 												Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
 												leo
 												quam
-												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+												aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+												the
 												mattis, leo quam aliquet congue justo ut scelerisque.
 											</div>
 										</div>
@@ -2120,7 +2438,7 @@
 		</div>
 		<!-- content end -->
 
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="footer__content">
 				<div class="container">
 					<div class="footer__inner inner">
@@ -2140,7 +2458,7 @@
 								Avenue
 								Northwest #100, New York-2573</a>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col footer__col--first">
 							<div class="footer__title">
 								Our Company
 							</div>
@@ -2182,7 +2500,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="footer__col">
+						<div class="footer__col footer__col--second">
 							<div class="footer__title">
 								Help Support
 							</div>
@@ -2278,16 +2596,16 @@
 				</div>
 			</div>
 		</footer> -->
-		<!-- footer end -->
+		<!-- footer end
 
 	</div>
-	<!-- wrapper end -->
+	 wrapper end -->
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-	<script src="js/libs.min.js"></script>
-	<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
 </body>
 
 </html>
