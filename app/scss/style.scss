@@ -28,7 +28,6 @@
 		position: relative;
 		margin-right: 30px;
 		&:hover .overview {
-			// display: block;
 			visibility: visible;
 			opacity: 1;
 			transform: scaleY(1);
@@ -165,22 +164,19 @@
 	}
 	&__menu-line {
 		display: inline-block;
-		// position: relative;
 		& + & {
 			margin-left: 30px;
 		}
-		&:not(:last-child) {
+		&:nth-last-child(n + 3) {
 			position: relative;
 		}
 		&:hover .header__submenu-list {
-			// display: block;
 			visibility: visible;
 			opacity: 1;
 			transform: scaleY(1);
 		}
 
 		&:hover .header__megamenu {
-			// display: flex;
 			visibility: visible;
 			opacity: 1;
 			transform: scaleY(1);
@@ -247,12 +243,6 @@
 		padding: 20px;
 		position: absolute;
 		visibility: hidden;
-		// opacity: 0;
-		// transform: scale(0.8);
-		// transition: 0.4s ease-in-out;
-		// transform: scaleY(0);
-		// transform-origin: 0 0;
-		// transition: 0.5s ease-in-out;
 	}
 
 	&__submenu-line,
@@ -294,7 +284,6 @@
 	// HEADER __ megamenu *****
 
 	&__megamenu {
-		// width: 1140px;
 		width: 100%;
 		background-color: #fff;
 		padding: 35px 30px;
@@ -330,11 +319,8 @@
 	&__megamenu-list {
 		width: 100%;
 		margin-top: 25px;
-		&--copy {
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-			flex-flow: wrap;
+		&--col {
+			column-count: 2;
 		}
 
 		& + & {
@@ -412,7 +398,6 @@
 		border-radius: 0 0 3px 3px;
 		right: -24px;
 	}
-	// display: none;
 	transform: scaleY(0);
 	transform-origin: 0 0;
 	transition: 0.5s ease-in-out;
@@ -452,9 +437,6 @@
 	&__link {
 		font-size: 15px;
 		color: $blue;
-	}
-
-	&__inner {
 	}
 
 	&__item {
@@ -511,8 +493,6 @@
 			color: $blue;
 		}
 	}
-	&__event {
-	}
 
 	&__product {
 		color: $blue;
@@ -537,7 +517,6 @@
 		flex: 0 0 32px;
 		position: relative;
 		&--trash {
-			// margin-bottom: 10px;
 			margin: 0 auto 10px;
 		}
 		&::before {
@@ -602,9 +581,6 @@
 		transform: translate(-100%, -50%);
 		width: 16px;
 		height: 16px;
-	}
-	&__right {
-		// text-align: center;
 	}
 	&__price {
 		height: 30px;
@@ -860,12 +836,7 @@
 	&__inner {
 		position: relative;
 	}
-	// & .slick-list {
-	// 	margin: 0 -15px;
-	// }
-	// & .slick-slide {
-	// 	margin: 0 15px;
-	// }
+
 	& .slick-dots {
 		text-align: center;
 		margin-top: 25px;
@@ -960,9 +931,6 @@
 	}
 
 	&__img-link {
-		// background-repeat: no-repeat;
-		// background-position: center;
-		// background-size: cover;
 		position: relative;
 		transition: all 0.8s;
 	}
@@ -1118,84 +1086,32 @@
 	&__top {
 		position: relative;
 	}
-	&__title {
-		// margin-bottom: 30px;
+	&__filter:hover .products__list {
+		display: block;
 	}
-	// &__filter {
-	// 	color: #747b86;
-	// 	font-size: 16px;
-	// 	padding-right: 30px;
-	// 	position: relative;
-	// 	cursor: pointer;
-	// }
-	// &__filter-btn {
-	// 	position: absolute;
-	// 	cursor: pointer;
-	// 	width: 10px;
-	// 	height: 21px;
-	// 	background-image: radial-gradient(circle at center, #a3b1c4 1.5px, transparent 2px);
-	// 	background-size: 11px 7px;
-	// 	top: 1px;
-	// 	right: 3px;
-	// 	transition: all 0.5s;
-	// 	&:hover {
-	// 		background-image: radial-gradient(circle at center, $blue 1.5px, transparent 2px);
-	// 	}
-	// }
-
-	&__filter {
+	&__filter-btn {
 		color: #747b86;
 		font-size: 16px;
 		padding: 28px 28px;
 		position: relative;
 		flex: 0 0 auto;
+		background-color: #fff;
+		border: transparent;
 		cursor: pointer;
-		&:hover .products__filter-btn {
-			background-image: radial-gradient(circle at center, $blue 1.5px, transparent 2px);
+		&::after {
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 21px;
+			background-image: radial-gradient(circle at center, #a3b1c4 1.5px, transparent 2px);
+			background-size: 11px 7px;
+			top: 28px;
+			right: 6px;
 		}
 		&:hover {
 			color: $blue;
 		}
-		&:hover .products__list {
-			display: block;
-		}
 	}
-	&__filter-btn {
-		position: absolute;
-		cursor: pointer;
-		width: 10px;
-		height: 21px;
-		background-image: radial-gradient(circle at center, #a3b1c4 1.5px, transparent 2px);
-		background-size: 11px 7px;
-		top: 28px;
-		right: 6px;
-		transition: all 0.5s;
-	}
-
-	// &__filter {
-	// 	color: #747b86;
-	// 	font-size: 16px;
-	// 	padding-right: 30px;
-	// 	position: relative;
-	// 	cursor: pointer;
-	// 	background-image: radial-gradient(circle at center, #a3b1c4 1.5px, transparent 2px);
-	// 	background-size: 11px 7px;
-	// 	top: 1px;
-	// 	right: 3px;
-	// 	background-repeat-x: no-repeat;
-	// 	// &::after {
-	// 	// 	content: "";
-	// 	// 	position: absolute;
-	// 	// 	cursor: pointer;
-	// 	// 	width: 10px;
-	// 	// 	height: 21px;
-	// 	//
-	// 	// 	transition: all 0.5s;
-	// 	// }
-	// 	&:hover {
-	// 		background-image: radial-gradient(circle at center, $blue 1.5px, transparent 2px);
-	// 	}
-	// }
 
 	&__list {
 		min-width: 183px;
@@ -1217,21 +1133,21 @@
 			right: 20px;
 		}
 		position: absolute;
-		top: 66px;
-		right: -22px;
+		top: 90px;
+		right: 13px;
 		z-index: 2;
 		display: none;
 	}
 
-	&__line {
-		list-style: none;
+	&__link {
+		color: #747b86;
 		font-size: 15px;
+		display: block;
+		background-color: transparent;
+		border: transparent;
 		& + & {
 			margin-top: 14px;
 		}
-	}
-	&__link {
-		color: #747b86;
 
 		&:hover {
 			color: $blue;
@@ -1308,14 +1224,10 @@
 	}
 
 	&__img-link {
-		// background-repeat: no-repeat;
-		// background-position: center;
-		// background-size: cover;
 		position: relative;
 		transition: all 0.8s;
 	}
 	&__img {
-		// width: 360px;
 		width: 100%;
 		min-height: 230px;
 		height: 100%;
@@ -1373,8 +1285,6 @@
 		display: flex;
 		align-items: center;
 		margin-right: 45px;
-		// margin-bottom: 15px;
-		// margin: 0 45px 15px 0;
 	}
 
 	&__avatar {
@@ -1391,8 +1301,6 @@
 
 	&__category {
 		position: relative;
-		// padding-left: 30px;
-		// margin-bottom: 15px;
 	}
 	&__category-icon {
 		position: absolute;
@@ -1433,7 +1341,6 @@
 
 	&__rating {
 		margin-right: auto;
-		// margin-left: 16px;
 	}
 
 	&__buy {
@@ -1722,9 +1629,6 @@
 		background-size: cover;
 	}
 
-	&__inner {
-	}
-
 	&__item {
 		max-width: 610px;
 		margin: 0 auto;
@@ -1755,9 +1659,6 @@
 				height: 100px;
 			}
 		}
-	}
-
-	&__subtitle {
 	}
 
 	&__btn {
@@ -1859,9 +1760,6 @@
 		align-items: stretch;
 	}
 
-	&__box {
-	}
-
 	&__item {
 		@include item;
 		max-width: 555px;
@@ -1889,8 +1787,6 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-	}
-	&__info {
 	}
 	&__avatar {
 		width: 80px;
@@ -2102,9 +1998,6 @@
 	&__desc {
 		margin-bottom: 50px;
 	}
-
-	&__btn {
-	}
 }
 // start end)
 
@@ -2132,6 +2025,9 @@
 
 	&__desc {
 		margin-bottom: 35px;
+	}
+	&__address {
+		font-style: normal;
 	}
 
 	&__link {
@@ -2199,9 +2095,6 @@
 	&__connection {
 		max-width: 380px;
 		padding-right: 20px;
-	}
-
-	&__subscribe {
 	}
 
 	&__form {
