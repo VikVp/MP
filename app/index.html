@@ -28,9 +28,9 @@
 							</a>
 							<div class="header__info inner">
 								<div class="header__item">
-									<div class="header__notice-box">
-										<a class="header__notice" href="#">
-											<span class="header__notice-counter header__counter-badge">25</span>
+									<div class="header__item-box">
+										<a class="header__item-link header__item-link--notice" href="#">
+											<span class="header__item-counter header__item-counter--notice">25</span>
 										</a>
 										<div class="overview">
 											<div class="overview__top inner">
@@ -56,9 +56,9 @@
 														<div class="overview__product">
 															Marketify Coffee Shop
 														</div>
-														<div class="overview__time">
+														<time class="overview__time">
 															Just now
-														</div>
+														</time>
 													</div>
 													<div class="overview__icon overview__icon--heart lnr lnr-heart">
 													</div>
@@ -78,9 +78,9 @@
 														<div class="overview__product">
 															MartPlace Extension Bundle
 														</div>
-														<div class="overview__time">
+														<time class="overview__time">
 															2 hours ago
-														</div>
+														</time>
 													</div>
 													<div class="overview__icon overview__icon--bubble lnr lnr-bubble">
 													</div>
@@ -99,9 +99,9 @@
 														<div class="overview__product">
 															Bryson-Responsive Template
 														</div>
-														<div class="overview__time">
+														<time class="overview__time">
 															6 hours ago
-														</div>
+														</time>
 													</div>
 													<div class="overview__icon overview__icon--cart lnr lnr-cart">
 													</div>
@@ -120,9 +120,9 @@
 														<div class="overview__product">
 															Rida-Responsive vCard Temp...
 														</div>
-														<div class="overview__time">
+														<time class="overview__time">
 															2 hours ago
-														</div>
+														</time>
 													</div>
 													<div class="overview__icon overview__icon--star lnr lnr-star">
 													</div>
@@ -132,9 +132,9 @@
 									</div>
 								</div>
 								<div class="header__item">
-									<div class="header__messages-box">
-										<a class="header__messages" href="#">
-											<span class="header__messages-counter header__counter-badge">6</span>
+									<div class="header__item-box">
+										<a class="header__item-link header__item-link--messages" href="#">
+											<span class="header__item-counter header__item-counter--messages">6</span>
 										</a>
 										<div class="overview">
 											<div class="overview__top inner">
@@ -156,9 +156,9 @@
 																	Anderson
 																</a>
 															</object>
-															<div class="overview__time overview__time--today">
+															<time class="overview__time overview__time--today">
 																Just now
-															</div>
+															</time>
 														</div>
 														<div class="overview__messages">
 															Hello John Smith! Nunc placerat id...
@@ -175,9 +175,9 @@
 																	Bulbul Ahmed
 																</a>
 															</object>
-															<div class="overview__time overview__time--today">
+															<time class="overview__time overview__time--today">
 																2 hours ago
-															</div>
+															</time>
 														</div>
 														<div class="overview__messages">
 															Hello John Smith! Nunc placerat id...
@@ -194,9 +194,9 @@
 																	EchoTheme
 																</a>
 															</object>
-															<div class="overview__time">
+															<time class="overview__time">
 																Jul 16
-															</div>
+															</time>
 														</div>
 														<div class="overview__messages">
 															Hello John Smith! Nunc placerat id...
@@ -213,9 +213,9 @@
 																	Themeluva
 																</a>
 															</object>
-															<div class="overview__time">
+															<time class="overview__time">
 																May 23
-															</div>
+															</time>
 														</div>
 														<div class="overview__messages">
 															Hello John Smith! Nunc placerat id...
@@ -232,9 +232,9 @@
 																	Adnan
 																</a>
 															</object>
-															<div class="overview__time">
+															<time class="overview__time">
 																Mar 26
-															</div>
+															</time>
 														</div>
 														<div class="overview__messages">
 															Marketify Coffee Shop
@@ -247,10 +247,9 @@
 									</div>
 								</div>
 								<div class="header__item">
-									<div class="header__basket-box">
-
-										<a class="header__basket" href="#">
-											<span class="header__basket-counter header__counter-badge">2</span>
+									<div class="header__item-box">
+										<a class="header__item-link header__item-link--basket" href="#">
+											<span class="header__item-counter header__item-counter--basket">2</span>
 										</a>
 										<div class="overview overview--basket">
 
@@ -329,19 +328,18 @@
 									</div>
 								</div>
 							</div>
-
-							<div class="header__account inner">
-								<a href="#">
+							<div class="header__account">
+								<a href="#" class="header__account-box inner">
 									<img class="header__avatar" src="images/content/avatar.jpg" alt="avatar">
+									<div class="header__account-text">
+										<div class="header__nickname">
+											Taofiq Hakim
+										</div>
+										<div class="header__total-sum">
+											$20.45
+										</div>
+									</div>
 								</a>
-								<div class="header__account-text">
-									<a class="header__nickname" href="#">
-										Taofiq Hakim
-									</a>
-									<a class="header__total-sum" href="#">
-										$20.45
-									</a>
-								</div>
 								<ul class="header__submenu-list header__submenu-list--account">
 									<li class="header__submenu-line">
 										<a class="header__submenu-link header__submenu-link--account lnr lnr-user" href="#">
@@ -408,15 +406,15 @@
 					<div class="container">
 						<div class="header__inner inner">
 							<nav class="header__menu">
-								<div class="header__menu-btn">
+								<button class="header__menu-btn">
 									<div class="header__menu-row"></div>
 									<div class="header__menu-row"></div>
 									<div class="header__menu-row"></div>
-								</div>
+								</button>
 								<ul id="accordion" class="header__menu-list">
 									<li class="header__menu-line">
 										<a class="header__menu-link" href="#">
-											HOME
+											Home
 										</a>
 										<ul class="header__submenu-list">
 											<li class="header__submenu-line">
@@ -1177,10 +1175,10 @@
 									</li>
 								</ul>
 							</nav>
-							<div class="header__search">
-								<form action="#" class="header__search-form">
-									<input class="header__search-input" type="text" placeholder="Search product here..." required>
-									<button class="header__search-btn" type="submit"></button>
+							<div class="header__search search">
+								<form action="#" class="search__form">
+									<input class="search__input" type="search" placeholder="Search product here..." required>
+									<button class="search__btn" type="submit"></button>
 								</form>
 							</div>
 						</div>
@@ -1218,7 +1216,7 @@
 						<div class="search-home__inner">
 
 							<form action="#" class="search-home__form inner">
-								<input class="search-home__input" type="text" placeholder="search-home your products...">
+								<input class="search-home__input" type="search" placeholder="search-home your products...">
 								<select name="Categories" class="search-home__drop-down-list">
 									<option selected disabled>All Categories</option>
 									<option value="Category-1">Category-1</option>
@@ -1227,7 +1225,7 @@
 									<option value="Category-4">Category-4</option>
 									<option value="Category-5">Category-5</option>
 								</select>
-								<button class="search-home__btn" type="submit">search-home Now</button>
+								<button class="search-home__btn" type="submit">Search Now</button>
 							</form>
 						</div>
 					</div>
@@ -1239,7 +1237,7 @@
 						<div class="features__inner inner">
 							<div class="features__item">
 								<img class="features__image" src="images/icon/features-icon-1.jpg" alt="features-icon">
-								<div class="features__title title-item">
+								<div class="features__title">
 									Best UX Research
 								</div>
 								<div class="features__desc desc">
@@ -1251,7 +1249,7 @@
 							<div class="features__item features__item--shadow">
 								<img class="features__image features__image--big" src="images/icon/features-icon-2.jpg"
 									alt="features-icon">
-								<div class="features__title title-item">
+								<div class="features__title">
 									Fully Responsive
 								</div>
 								<div class="features__desc desc">
@@ -1262,7 +1260,7 @@
 							</div>
 							<div class="features__item">
 								<img class="features__image" src="images/icon/features-icon-3.jpg" alt="features-icon">
-								<div class="features__title title-item">
+								<div class="features__title">
 									Buy & Sell Easily
 								</div>
 								<div class="features__desc desc">
@@ -1288,7 +1286,7 @@
 										<a class="weekly__img-link" href="#">
 											<img class="weekly__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="weekly__item-btm">
+										<div class="weekly__item-btn">
 											<a class="weekly__btn-img" href="#">More Info</a>
 											<a class="weekly__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1323,7 +1321,7 @@
 										</div>
 										<div class="weekly__info  inner">
 											<div class="weekly__price">$10 - $50</div>
-											<div class="weekly__like">46</div>
+											<button class="weekly__like" type="button">46</button>
 											<div class="weekly__buy">634</div>
 											<div class="weekly__rating rate-star"></div>
 										</div>
@@ -1337,7 +1335,7 @@
 										<a class="weekly__img-link" href="#">
 											<img class="weekly__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="weekly__item-btm">
+										<div class="weekly__item-btn">
 											<a class="weekly__btn-img" href="#">More Info</a>
 											<a class="weekly__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1372,7 +1370,7 @@
 										</div>
 										<div class="weekly__info  inner">
 											<div class="weekly__price">$10 - $50</div>
-											<div class="weekly__like">46</div>
+											<button class="weekly__like" type="button">46</button>
 											<div class="weekly__buy">634</div>
 											<div class="weekly__rating rate-star"></div>
 										</div>
@@ -1386,7 +1384,7 @@
 										<a class="weekly__img-link" href="#">
 											<img class="weekly__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="weekly__item-btm">
+										<div class="weekly__item-btn">
 											<a class="weekly__btn-img" href="#">More Info</a>
 											<a class="weekly__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1421,7 +1419,7 @@
 										</div>
 										<div class="weekly__info  inner">
 											<div class="weekly__price">$10 - $50</div>
-											<div class="weekly__like">46</div>
+											<button class="weekly__like" type="button">46</button>
 											<div class="weekly__buy">634</div>
 											<div class="weekly__rating rate-star"></div>
 										</div>
@@ -1435,7 +1433,7 @@
 										<a class="weekly__img-link" href="#">
 											<img class="weekly__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="weekly__item-btm">
+										<div class="weekly__item-btn">
 											<a class="weekly__btn-img" href="#">More Info</a>
 											<a class="weekly__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1470,7 +1468,7 @@
 										</div>
 										<div class="weekly__info  inner">
 											<div class="weekly__price">$10 - $50</div>
-											<div class="weekly__like">46</div>
+											<button class="weekly__like" type="button">46</button>
 											<div class="weekly__buy">634</div>
 											<div class="weekly__rating rate-star"></div>
 										</div>
@@ -1495,19 +1493,19 @@
 									Filter by:
 								</button>
 								<div class="products__list">
-									<button href="#" class="products__link">
+									<button type="button" class="products__link">
 										Trending items
 									</button>
-									<button href="#" class="products__link">
+									<button type="button" class="products__link">
 										Best seller
 									</button>
-									<button href="#" class="products__link">
+									<button type="button" class="products__link">
 										Best rating
 									</button>
-									<button href="#" class="products__link">
+									<button type="button" class="products__link">
 										Low price
 									</button>
-									<button href="#" class="products__link">
+									<button type="button" class="products__link">
 										High price
 									</button>
 								</div>
@@ -1529,14 +1527,14 @@
 								<button class="products__btn-filter" type="button" data-filter=".category-software">Software</button>
 								<button class="products__btn-filter" type="button" data-filter=".category-plugins">Plugins</button>
 							</div>
-							<div class="products__inner-items inner">
 
+							<div class="products__inner-items inner">
 								<div class="products__item mix category-joomla">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1548,7 +1546,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon.svg" alt="category-icon">
@@ -1562,7 +1560,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1573,7 +1571,7 @@
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1585,7 +1583,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon-2.svg"
@@ -1600,7 +1598,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1611,7 +1609,7 @@
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1623,7 +1621,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon-3.png"
@@ -1638,7 +1636,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1649,7 +1647,7 @@
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1661,7 +1659,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon.svg" alt="category-icon">
@@ -1675,7 +1673,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1686,7 +1684,7 @@
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1698,7 +1696,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon-2.svg"
@@ -1713,7 +1711,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1724,7 +1722,7 @@
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1736,7 +1734,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="weekly__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												<img class="products__category-icon" src="images/content/category-icon-3.png"
@@ -1751,18 +1749,16 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="products__bottom-btn">
-							<button class="btn--blue btn" type="button" data-filter=".category-new">
-								All New Products
-							</button>
-						</div>
+						<button class="products__bottom-btn btn--blue btn" type="button" data-filter=".category-new">
+							All New Products
+						</button>
 					</div>
 				</section>
 				<!-- products end -->
@@ -1774,12 +1770,12 @@
 						</div>
 						<div class="feed__inner">
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1791,7 +1787,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1804,7 +1800,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1812,12 +1808,12 @@
 							</div>
 
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1829,7 +1825,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1842,7 +1838,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1850,12 +1846,12 @@
 							</div>
 
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1867,7 +1863,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1880,7 +1876,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1888,12 +1884,12 @@
 							</div>
 
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1905,7 +1901,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1918,7 +1914,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1926,12 +1922,12 @@
 							</div>
 
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1943,7 +1939,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1956,7 +1952,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -1964,12 +1960,12 @@
 							</div>
 
 							<div class="feed__box">
-								<div class="feed__item">
+								<div class="feed__products products">
 									<div class="products__inner-img">
 										<a class="products__img-link" href="#">
 											<img class="products__img" src="images/content/product-bg-2.jpg" alt="product">
 										</a>
-										<div class="products__item-btm">
+										<div class="products__item-btn">
 											<a class="products__btn-img" href="#">More Info</a>
 											<a class="products__btn-img" href="#">Live Demo</a>
 										</div>
@@ -1981,7 +1977,7 @@
 										<div class="products__box inner">
 											<a class="products__author" href="#">
 												<img class="products__avatar" src="images/content/products-avatar.jpg" alt="avatar">
-												<span>Theme-Valley</span>
+												<span class="products__name">Theme-Valley</span>
 											</a>
 											<a class="products__category" href="#">
 												Plugin
@@ -1994,7 +1990,7 @@
 									</div>
 									<div class="products__info inner">
 										<div class="products__price">$20</div>
-										<div class="products__like">90</div>
+										<button class="products__like" type="button">90</button>
 										<div class="products__rating rate-star"></div>
 										<div class="products__buy">246</div>
 									</div>
@@ -2307,9 +2303,9 @@
 									</div>
 								</div>
 								<div class="news__info inner">
-									<div class="news__date">
+									<time class="news__date">
 										15 Mar 2017
-									</div>
+									</time>
 									<div class="news__box inner">
 										<div class="news__comment">
 											45
@@ -2335,9 +2331,9 @@
 									</div>
 								</div>
 								<div class="news__info inner">
-									<div class="news__date">
+									<time class="news__date">
 										15 Mar 2017
-									</div>
+									</time>
 									<div class="news__box inner">
 										<div class="news__comment">
 											45
@@ -2362,9 +2358,9 @@
 									</div>
 								</div>
 								<div class="news__info inner">
-									<div class="news__date">
+									<time class="news__date">
 										15 Mar 2017
-									</div>
+									</time>
 									<div class="news__box inner">
 										<div class="news__comment">
 											45
@@ -2378,6 +2374,7 @@
 						</div>
 				</section>
 				<!-- news end -->
+
 				<section class="garantee">
 					<div class="container">
 						<div class="garantee__inner inner">
@@ -2532,7 +2529,7 @@
 							</div>
 							<div class="footer__subscribe">
 								<form action="#" class="footer__form">
-									<input class="footer__input" type="text" placeholder="Enter email">
+									<input class="footer__input" type="email" placeholder="Enter email">
 									<button class="footer__btn" type="submit">Submit</button>
 								</form>
 							</div>
@@ -2576,11 +2573,13 @@
 					</div>
 				</div>
 			</div>
-		</footer> -->
-		<!-- footer end
+		</footer>
 
-	</div>
-	 wrapper end -->
+
+		<!-- -- footer end -->
+
+
+		<!-- wrapper end  -->
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

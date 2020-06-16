@@ -12,10 +12,7 @@ a {
 }
 
 // footer
-* {
-  margin: 0;
-  padding: 0;
-}
+
 html,
 body {
   height: 100%;
@@ -103,3 +100,10 @@ body {
 .desc {
   line-height: 30px;
 }
+
+// .active {
+//   color: $blue;
+//   &::before {
+//     color: $blue;
+//   }
+// }
