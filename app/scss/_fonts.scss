@@ -38,6 +38,17 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?s0ge59");
+  src: url("../fonts/icomoon.eot?s0ge59#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?s0ge59") format("truetype"), url("../fonts/icomoon.woff?s0ge59") format("woff"),
+    url("../fonts/icomoon.svg?s0ge59#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -59,6 +70,9 @@
 }
 .icon-th-list:before {
   content: "\f00b";
+}
+.icon-check:before {
+  content: "\f00c";
 }
 .icon-twitter:before {
   content: "\f099";

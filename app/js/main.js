@@ -117,11 +117,6 @@ $(function () {
   });
 
 
-
-
-
-
-
   $(function () {
     if (window.innerWidth <= 520) {
       var Accordion = function (el, multiple) {
@@ -153,14 +148,26 @@ $(function () {
 
 
   // category-page
+  // $('.icon-th-large').on('click', function () {
+  //   $('.products__item').removeClass("list").addClass('grid');
+  //   $(this).addClass("active");
+  //   $('.icon-th-list').removeClass("active");
+  // });
+
+  // $('.icon-th-list').on('click', function () {
+  //   $('.products__item').removeClass("grid").addClass("list");
+  //   $(this).addClass("active");
+  //   $('.icon-th-large').removeClass("active");
+  // });
+
   $('.icon-th-large').on('click', function () {
-    $('.products__item').removeClass("list").addClass('grid');
+    $('.products__item').removeClass("products__item--list");
     $(this).addClass("active");
     $('.icon-th-list').removeClass("active");
   });
 
   $('.icon-th-list').on('click', function () {
-    $('.products__item').removeClass("grid").addClass("list");
+    $('.products__item').addClass("products__item--list");
     $(this).addClass("active");
     $('.icon-th-large').removeClass("active");
   });
@@ -175,7 +182,6 @@ $(function () {
     type: 'double',
     prefix: "$"
   });
-
 
 
 
